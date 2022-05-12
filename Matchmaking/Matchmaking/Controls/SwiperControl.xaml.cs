@@ -124,7 +124,7 @@ namespace Matchmaking.Controls
 
         private void Exit()
         {
-
+            // Needed for Android, not UWP
             Device.BeginInvokeOnMainThread(async () =>
             {
                 var direction = photo.TranslationX < 0 ? -1 : 1;
